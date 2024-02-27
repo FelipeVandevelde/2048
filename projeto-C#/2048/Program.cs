@@ -418,7 +418,7 @@ namespace _2048
 
         static void HighScore(int acao)
         {
-            string texto = @"C:\Users\Felipe\source\repos\2048\highScore.txt";
+            string texto = @"<LOCAL_FILE>"; //busque encontrar o arquivo "highScore.txt" e com o botão direito do mouse selecione "Copiar como caminho" e cole o caminho do arquivo
 
             switch (acao)
             {
