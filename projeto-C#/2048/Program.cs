@@ -38,7 +38,7 @@ namespace _2048
                         EndGame();
                     }
                     teclaApertada = Tecla();
-                } while (teclaApertada != "LeftArrow" && teclaApertada != "A" && teclaApertada != "RightArrow" && teclaApertada != "D" && teclaApertada != "UpArrow" && teclaApertada != "W" && teclaApertada != "DownArrow" && teclaApertada != "S" && teclaApertada != "Escape" && teclaApertada != "Enter");
+                } while (teclaApertada != "LeftArrow" && teclaApertada != "A" && teclaApertada != "a" && teclaApertada != "RightArrow" && teclaApertada != "D" && teclaApertada != "d"  && teclaApertada != "UpArrow" && teclaApertada != "W" && teclaApertada != "w" && teclaApertada != "DownArrow" && teclaApertada != "S" && teclaApertada != "s" && teclaApertada != "Escape" && teclaApertada != "Enter");
 
                 if (teclaApertada != "Escape")
                 {
@@ -203,37 +203,29 @@ namespace _2048
                     break;
 
                 case "LeftArrow":
-                    ArrastaEsquerda();
-                    SomaEsquerda();
-                    break;
                 case "A":
+                case "a":
                     ArrastaEsquerda();
                     SomaEsquerda();
                     break;
 
                 case "RightArrow":
-                    ArrastaDireita();
-                    SomaDireita();
-                    break;
                 case "D":
+                case "d":
                     ArrastaDireita();
                     SomaDireita();
                     break;
 
                 case "UpArrow":
-                    ArrastaCima();
-                    SomaCima();
-                    break;
                 case "W":
+                case "w":
                     ArrastaCima();
                     SomaCima();
                     break;
 
                 case "DownArrow":
-                    ArrastaBaixo();
-                    SomaBaixo();
-                    break;
                 case "S":
+                case "s":
                     ArrastaBaixo();
                     SomaBaixo();
                     break;
@@ -418,7 +410,7 @@ namespace _2048
 
         static void HighScore(int acao)
         {
-            string texto = @"<LOCAL_FILE>"; //busque encontrar o arquivo "highScore.txt" e com o botão direito do mouse selecione "Copiar como caminho" e cole o caminho do arquivo
+            string texto = @"<LOCAL_FILE>"; //Encontre o arquivo "highScore.txt" e com o botão direito do mouse selecione "Copiar como caminho" e cole o caminho do arquivo
 
             switch (acao)
             {
